@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- DevA code start here -->
 <body>
 
@@ -99,10 +100,76 @@
           <span class="fact-value">Python · Go · Bash</span>
         </div>
       </div>
+=======
+<!-- DevB branch code start from here -->
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title">Where I've shipped<br>at scale.</h2>
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+        <div class="tl-period">2022 — Present</div>
+        <div class="tl-role">Senior DevOps Engineer</div>
+        <div class="tl-company">▸ Stripe · San Francisco, CA</div>
+        <p class="tl-desc">
+          Owned reliability engineering for payment processing services handling $500B+ in annualized volume.
+          Architected a multi-region active-active Kubernetes platform across 4 AWS regions, achieving 99.999% monthly uptime.
+          Led the migration of 60+ microservices from EC2 to EKS with zero customer-facing downtime.
+          Reduced MTTR by 68% by building a unified observability platform on top of OpenTelemetry, Prometheus, and Grafana.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">AWS</span>
+          <span class="tl-tag">Kubernetes</span>
+          <span class="tl-tag">Terraform</span>
+          <span class="tl-tag">Datadog</span>
+          <span class="tl-tag">Go</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-period">2020 — 2022</div>
+        <div class="tl-role">DevOps Engineer</div>
+        <div class="tl-company">▸ Notion · San Francisco, CA</div>
+        <p class="tl-desc">
+          Built and maintained the CI/CD infrastructure that deploys Notion's product 20+ times per day.
+          Designed a GitOps workflow using ArgoCD and Helm that eliminated manual deployments entirely.
+          Reduced cloud costs by 35% through reserved instance purchasing, rightsizing, and spot instance automation.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">GCP</span>
+          <span class="tl-tag">ArgoCD</span>
+          <span class="tl-tag">GitHub Actions</span>
+          <span class="tl-tag">Python</span>
+          <span class="tl-tag">Helm</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-period">2018 — 2020</div>
+        <div class="tl-role">Cloud Infrastructure Engineer</div>
+        <div class="tl-company">▸ Intuit · Mountain View, CA</div>
+        <p class="tl-desc">
+          Managed AWS infrastructure for TurboTax's peak season traffic, scaling from 100 to 10,000+ instances
+          during tax season using auto-scaling groups and predictive scaling policies.
+          Introduced infrastructure-as-code practices using Terraform, replacing brittle ClickOps workflows.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">AWS</span>
+          <span class="tl-tag">Terraform</span>
+          <span class="tl-tag">Ansible</span>
+          <span class="tl-tag">Jenkins</span>
+          <span class="tl-tag">Bash</span>
+        </div>
+      </div>
+
+>>>>>>> DevB
     </div>
   </div>
 </section>
 
+<<<<<<< HEAD
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
@@ -202,12 +269,132 @@
           <span class="chip orange">Trivy</span>
           <span class="chip orange">VPC Design</span>
           <span class="chip orange">mTLS</span>
+=======
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title">Things I've built<br>and open-sourced.</h2>
+    <div class="projects-grid reveal">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🔭</div>
+          <div class="project-links">
+            <a href="#" class="icon-link" title="GitHub">⌥</a>
+            <a href="#" class="icon-link" title="Live">↗</a>
+          </div>
+        </div>
+        <div class="project-title">k8s-cost-analyzer</div>
+        <p class="project-desc">
+          CLI tool that scans Kubernetes clusters and surfaces cost-saving opportunities — idle pods, oversized PVCs, underutilized nodes — with actionable recommendations and Slack/PagerDuty alerting.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Go</span>
+          <span class="stack-badge">Kubernetes API</span>
+          <span class="stack-badge">Prometheus</span>
+          <span class="stack-badge">Helm</span>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥</a>
+            <a href="#" class="icon-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title">tf-drift-guardian</div>
+        <p class="project-desc">
+          GitHub Action that detects Terraform state drift on every PR and posts a detailed diff as a pull-request comment. Integrates with OPA for policy enforcement before apply.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Terraform</span>
+          <span class="stack-badge">GitHub Actions</span>
+          <span class="stack-badge">OPA</span>
+          <span class="stack-badge">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🚦</div>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥</a>
+            <a href="#" class="icon-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title">canary-operator</div>
+        <p class="project-desc">
+          A Kubernetes operator that automates canary deployments with configurable traffic-splitting, automated rollback on SLO breach, and integration with Datadog and Prometheus metrics.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Go</span>
+          <span class="stack-badge">Operator SDK</span>
+          <span class="stack-badge">Istio</span>
+          <span class="stack-badge">Datadog API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🔐</div>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥</a>
+            <a href="#" class="icon-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title">secrets-syncer</div>
+        <p class="project-desc">
+          Bi-directional sync between HashiCorp Vault and AWS Secrets Manager / GCP Secret Manager. Supports automatic rotation, versioning, and audit logging to SIEM systems.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">Vault</span>
+          <span class="stack-badge">AWS SDK</span>
+          <span class="stack-badge">GCP SDK</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📈</div>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥</a>
+            <a href="#" class="icon-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title">slo-dashboard</div>
+        <p class="project-desc">
+          Grafana dashboard bundle for SRE teams — pre-built SLO tracking, error-budget burn rate alerts, and latency percentile breakdowns. One-click deploy via Helm.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Grafana</span>
+          <span class="stack-badge">Prometheus</span>
+          <span class="stack-badge">Helm</span>
+          <span class="stack-badge">AlertManager</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🤖</div>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥</a>
+            <a href="#" class="icon-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title">incident-bot</div>
+        <p class="project-desc">
+          Slack bot for incident management — auto-creates war room channels, pulls runbooks, assigns on-call engineers via PagerDuty, and generates postmortem drafts with timeline.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">Slack API</span>
+          <span class="stack-badge">PagerDuty</span>
+          <span class="stack-badge">Lambda</span>
+
 <!-- DevA 2nd code start here -->
 <!-- CERTIFICATIONS -->
 <section id="certifications">
@@ -388,4 +575,7 @@
 </script>
 </body>
 </html>
+=======
+
+>>>>>>> DevB
 
